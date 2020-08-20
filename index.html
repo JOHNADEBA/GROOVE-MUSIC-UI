@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Groove</title>
+  </head>
+  <body>
+    <div class="main-container">
+      
+      <div class="left-section">
+        <div class="header-left-section">
+          <i
+            class="fas fa-arrow-left"
+            style="font-size: 16px; color: #fff;"
+          ></i>
+          <p>Groove Music</p>
+        </div>
+
+        <div class="option-list-button">
+          <button class="btn">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="input-search">
+            <input type="text" class="search" placeholder="Search" />
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+
+          <div class="option-lists">
+            <div class="option-list">
+              <i class="fas fa-music" style="font-size: 16px; color: #fff;"></i>
+              <p>My music</p>
+            </div>
+            <div class="option-list">
+              <i class="fas fa-clock"></i>
+              <p>Recent plays</p>
+            </div>
+            <div class="option-list">
+              <i class="fas fa-play"></i>
+              <p>Now playing</p>
+            </div>
+            <hr />
+          </div>
+          
+            <div class="option-list2">
+              <div class="first">
+                <i class="fa fa-outdent"></i>
+                <p>Playlist</p>
+              </div>
+              <i class="i2 fa fa-plus"></i>
+            </div>
+          
+        </div>
+        <hr />
+        <div class="footer-left-section">
+          <i class="i3 fa fa-spin">&#xf013;</i>
+          <p>Setting</p>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="main-right-section">
+          <h1>My music</h1>
+          <nav>
+            <ul class="ul1">
+              <li class="li1"><a class="a1" href="#">Songs</a></li>
+              <li class="li1"><a class="a1" href="#">Artists</a></li>
+              <li class="li1"><a class="a1" href="#">Albums</a></li>
+            </ul>
+          </nav>
+          <hr />
+
+          <ul class="ul2">
+            <li class="li2">
+              <a class="a22" href="#"
+                ><i class="fa fa-random"></i>Shuffle all(100)</a
+              >
+            </li>
+            <li class="li2">Sort by: <a class="a2" href="#">Date added</a></li>
+            <li class="li2">Genre: <a class="a2" href="#">All genres</a></li>
+          </ul>
+
+          <div class="music-list">
+            <div class="songs">
+              <audio
+                src="./songs/07-Bogus-Charms-feat.-Meek-Mill-SongsLover.com_.mp3"
+              ></audio>
+              <p>Rick Ross Ft. Meek Mills</p>
+              <p>Hip Hop/Rap</p>
+              <p>2019</p>
+              <p>04:01</p>
+            </div>
+
+            <div class="songs">
+              <audio src="./songs/Buju-Lenu-Remix-ft.-Burna-Boy.mp3"></audio>
+              <p>Buju Ft. Burna Boy</p>
+              <p>Afro</p>
+              <p>2019</p>
+              <p>03:33</p>
+            </div>
+
+            <div class="songs">
+              <audio src="./songs/Gunna - Outstanding.mp3"></audio>
+              <p>Gunna</p>
+              <p>Hip/Hop</p>
+              <p>2019</p>
+              <p>03:46</p>
+            </div>
+
+            <div class="songs">
+              <audio src="./songs/Future - My Savages (Audio).mp3"></audio>
+              <p>Future</p>
+              <p>Hip/Hop</p>
+              <p>2019</p>
+              <p>03:26</p>
+            </div>
+
+            <div class="songs">
+              <audio src="./songs/Jack Harlow - WHATS POPPIN.mp3 type="audio/mpeg""></audio>
+              <p>Jack Harlow</p>
+              <p>Hip/Hop</p>
+              <p>2020</p>
+              <p>02:20</p>
+            </div>
+
+            <div class="songs">
+              <audio src="./songs/Wendy-Kay-Samahani-ft-Rigga.mp3"></audio>
+              <p>Samahani ft. Rigga</p>
+              <p>Rnb</p>
+              <p>2020</p>
+              <p>03:47</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="main-footer">
+      <div class="song-name"> 
+        <img src="./images/download.jfif" alt=""  width="100px"/>
+       <div class="artist">
+         <h2>Gunna - Outstanding</h2>
+          <h2 id="artist-name">Gunna</h2>
+      </div>
+    </div> 
+        <div class="controls-main">
+          <div class="controls" >
+           
+           <i class="fa fa-random"></i>
+           <i class="fa fa-step-backward"></i>           
+           <i id="play" class="fa fa-play-circle" ></i>
+           <i class="fa fa-step-forward" ></i>
+           <i class="fa fa-refresh" ></i>
+          </div>
+             <div class="bar">
+              <p>0:00</p> <input type="range" min="1" max="100" value="0"> <p>3:46</p> 
+             </div>
+        </div>
+        <div class="right-control">
+          <i id="i5" class="fas fa-volume-up" ></i>
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </div>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
